@@ -1,0 +1,103 @@
+/* Reset some defaults */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base body styling */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+}
+
+/* Page container */
+body > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding: 0 1rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 1rem;
+  color: #222;
+}
+h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.75rem;
+  color: #444;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #222;
+  padding: 0.75rem 1rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Active page link */
+nav a.active {
+  color: #ffcc00;          /* highlight color */
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 0.25rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cheatsheet code blocks */
+pre {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
