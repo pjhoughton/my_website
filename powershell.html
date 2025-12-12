@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PowerShell (Coming Soon)</title>
+  <title>PowerShell</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,29 +22,75 @@
   <header>
     <h1>⚡ PowerShell</h1>
     <p>
-      This page is under construction. Content about PowerShell tips, scripts, and automation 
-      will be available soon. Stay tuned!
+      This page highlights how I use PowerShell for scripting, automation, and system management. 
+      It includes a quick reference cheatsheet and an overview of PowerShell’s role in modern IT.
     </p>
   </header>
 
-  <section>
-    <h2>🚧 Coming Soon</h2>
-    <p>
-      I’m currently working on documenting my PowerShell journey — from everyday scripts to 
-      advanced automation in my homelab. Check back later for updates!
-    </p>
-  </section>
-  
-  
+  <main>
     <section>
-    <h2>📑 Cheatsheet</h2>
-    <p>
-      For quick reference, check out the 
-      <a href="./Cheatsheets/powershell-cheatsheet.html">PowerShell Cheatsheet</a>. 
-      It covers essential powershell commands I use regularly.
-    </p>
-  </section>
+      <h2>📂 Repository</h2>
+      <p>
+        🚧 Coming Soon – I’m currently working on publishing my PowerShell scripts and automation examples. 
+        They’ll be available here once ready.
+      </p>
+    </section>
 
-  <hr />
+    <section>
+      <h2>📑 Cheatsheet</h2>
+      <p>
+        For quick reference, check out the 
+        <a href="./Cheatsheets/powershell-cheatsheet.html">PowerShell Cheatsheet</a>. 
+        It covers essential commands I use regularly in both Windows and cross‑platform environments.
+      </p>
+    </section>
+
+    <section>
+      <h2>🛠️ Use Cases</h2>
+      <ul>
+        <li>Automating repetitive administrative tasks</li>
+        <li>Managing Windows systems and Active Directory</li>
+        <li>Interfacing with APIs and cloud services</li>
+        <li>Streamlining homelab workflows alongside Ansible and Docker</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>❓ What is PowerShell?</h2>
+      <p>
+        PowerShell is a task automation and configuration management framework from Microsoft. 
+        It combines a command‑line shell with a powerful scripting language built on .NET. 
+        PowerShell is designed to help system administrators and engineers automate tasks, 
+        manage systems, and integrate with modern platforms.
+      </p>
+      <p>
+        Unlike traditional shells, PowerShell works with objects rather than plain text, 
+        making it easier to manipulate structured data and interact with complex systems.
+      </p>
+
+      <h3>Windows PowerShell vs PowerShell (Core)</h3>
+      <ul>
+        <li><strong>Windows PowerShell:</strong> The original version, built on the full .NET Framework. 
+            It is Windows‑only and deeply integrated with Windows management tools.</li>
+        <li><strong>PowerShell (Core):</strong> The modern, cross‑platform version built on .NET Core. 
+            It runs on Windows, Linux, and macOS, making it more versatile for hybrid environments.</li>
+      </ul>
+
+      <h3>Key Concepts</h3>
+      <ul>
+        <li><strong>Cmdlets:</strong> Lightweight commands built into PowerShell (e.g., <code>Get-Process</code>).</li>
+        <li><strong>Modules:</strong> Packages of cmdlets and functions that extend PowerShell’s capabilities.</li>
+        <li><strong>Objects:</strong> PowerShell outputs structured objects, not plain text, enabling advanced manipulation.</li>
+        <li><strong>Pipelines:</strong> Allow chaining commands together, passing objects between them.</li>
+        <li><strong>Scripts:</strong> Collections of commands saved in <code>.ps1</code> files for reuse.</li>
+        <li><strong>Remoting:</strong> Execute commands on remote systems using <code>Enter-PSSession</code> or <code>Invoke-Command</code>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>&copy; 2025 Paul Houghton</p>
+  </footer>
 </body>
 </html>
