@@ -13,6 +13,7 @@
       <li><a href="ansible.html" class="active">Ansible</a></li>
       <li><a href="docker.html">Docker</a></li>
       <li><a href="homeassistant.html">Home Assistant</a></li>
+      <li><a href="powershell.html">PowerShell</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="resources.html">Resources</a></li>
     </ul>
@@ -26,73 +27,64 @@
     </p>
   </header>
 
-  <section>
-    <h2>📂 Repository</h2>
-    <p>
-      My Ansible playbooks and configurations are available on 
-      <a href="https://github.com/pjhoughton/ansible" target="_blank">GitHub</a>. 
-      These files are designed to streamline automation tasks and maintain consistency across my systems.
-    </p>
-  </section>
+  <main>
+    <section>
+      <h2>📂 Repository</h2>
+      <p>
+        My Ansible playbooks and configurations are available on 
+        <a href="https://github.com/pjhoughton/ansible" target="_blank">GitHub</a>. 
+        These files streamline automation tasks and maintain consistency across my systems.
+      </p>
+    </section>
 
-  <section>
-    <h2>📑 Cheatsheet</h2>
-    <p>
-      For quick reference, check out the 
-      <a href="./Cheatsheets/ansible-cheatsheet.html">Ansible Cheatsheet</a>. 
-      It covers essential commands and YAML snippets I use regularly.
-    </p>
-  </section>
+    <section>
+      <h2>📑 Cheatsheet</h2>
+      <p>
+        For quick reference, check out the 
+        <a href="./Cheatsheets/ansible-cheatsheet.html">Ansible Cheatsheet</a>. 
+        It covers essential commands and YAML snippets I use regularly.
+      </p>
+    </section>
 
-  <section>
-    <h2>🛠️ Use Cases</h2>
-    <p>
-      I primarily use Ansible for:
-    </p>
-    <ul>
-      <li>Automating server configuration in my homelab</li>
-      <li>Managing Docker deployments</li>
-      <li>Integrating with Home Assistant for smart home automation</li>
-      <li>Maintaining consistent workflows across multiple environments</li>
-    </ul>
-  </section>
-      <h2>What is Ansible?</h2>
-    <p>
-	Ansible is an open-source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes. It is free to use and benefits from the experience and intelligence of its thousands of contributors.
+    <section>
+      <h2>🛠️ Use Cases</h2>
+      <ul>
+        <li>Automating server configuration in my homelab</li>
+        <li>Managing Docker deployments</li>
+        <li>Integrating with Home Assistant for smart home automation</li>
+        <li>Maintaining consistent workflows across multiple environments</li>
+      </ul>
+    </section>
 
-	Ansible's main strengths are simplicity and ease of use. It also has a strong focus on security and reliability, featuring minimal moving parts. It uses OpenSSH for transport (with other transports and pull modes as alternatives) and uses a human-readable language designed for getting started quickly without extensive training.
+    <section>
+      <h2>❓ What is Ansible?</h2>
+      <p>
+        Ansible is an open-source IT automation engine that automates provisioning, configuration 
+        management, application deployment, orchestration, and many other IT processes. It is free 
+        to use and benefits from thousands of contributors.
+      </p>
+      <p>
+        Its main strengths are simplicity and ease of use. It also emphasizes security and reliability, 
+        featuring minimal moving parts. Ansible uses OpenSSH for transport and a human-readable language 
+        designed for quick adoption.
+      </p>
 
-	Key Concepts
-	Control Node
-	The machine from which you run the Ansible CLI tools.
+      <h3>Key Concepts</h3>
+      <ul>
+        <li><strong>Control Node:</strong> The machine from which you run the Ansible CLI tools.</li>
+        <li><strong>Managed Nodes:</strong> Target devices (servers, appliances, or computers) managed by Ansible.</li>
+        <li><strong>Inventory:</strong> A list of managed nodes, grouped and assigned variables.</li>
+        <li><strong>Playbooks:</strong> YAML files containing plays that define automation tasks.</li>
+        <li><strong>Plays:</strong> Map hosts to tasks, variables, and roles in an ordered list.</li>
+        <li><strong>Roles:</strong> Reusable collections of tasks, handlers, variables, and templates.</li>
+        <li><strong>Tasks:</strong> Individual actions applied to managed hosts.</li>
+      </ul>
+    </section>
+  </main>
 
-	Managed Nodes
-	Also referred to as 'hosts', these are the target devices (servers, network appliances, or any computer) you aim to manage with Ansible.
-
-	Inventory
-	A list of managed nodes provided by one or more 'inventory sources'. Your inventory can specify information specific to each node, like IP address. It is also used for assigning groups, allowing for node selection in the play and bulk variable assignment.
-
-	Playbooks
-	Playbooks contain Plays, which are the basic unit of Ansible execution. This is both an 'execution concept' and how we describe the files on which ansible-playbook operates. Playbooks are written in YAML and are easy to read, write, share, and understand. To learn more about playbooks, see Ansible playbooks.
-
-	Plays
-	The main context for Ansible execution. A playbook maps managed nodes (hosts) to tasks, containing variables, roles, and an ordered list of tasks. Plays can be run repeatedly, consisting of an implicit loop over the mapped hosts and tasks.
-
-	Roles
-	A limited distribution of reusable Ansible content (tasks, handlers, variables, plugins, templates, and files) for use inside of a play.
-
-	Tasks
-	The definition of an 'action' to be applied to the managed host. You can execute a single task once with an ad hoc command using ansible or ansible-console, both creating a virtual play.
-
-    </p>
-  </section>
-  
-  
-  
-  
-  
-  
-
-  <hr />
+  <footer>
+    <hr />
+    <p>&copy; 2025 Paul Houghton</p>
+  </footer>
 </body>
 </html>
